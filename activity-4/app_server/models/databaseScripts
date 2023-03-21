@@ -1,15 +1,7 @@
-brew services start mongodb-community@5.0
-
-brew services list
-
-brew services stop mongodb-community@5.0
-
+#!/bin/bash
 mongosh
-
 show dbs
-
 use Loc8r 
-
 db.locations.insertOne({
 	name: 'Starcups',
 	address: '125 High Street, Reading, RG6 1PS',
