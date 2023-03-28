@@ -1,38 +1,5 @@
 db.criminals.insertOne(
         {
-    "aliases": [
-        "Minh Nguyễn Quốc",
-        "Quốc-Minh Nguyen",
-        "Minh Nguyen Quoc",
-        "Quoc-Minh Nguyen",
-        "James Smith",
-        "David Minh"
-    ],
-
-    "nationality": "Vietnamese",
-    "files": [
-        {
-            "name": "English",
-            "url": "https://www.fbi.gov/wanted/cyber/minh-quoc-nguyen/download.pdf"
-        },
-        {
-            "name": "日本語で",
-            "url": "https://www.fbi.gov/wanted/cyber/minh-quoc-nguyen/nguyen2023japanese.pdf/@@download/file/nguyen2023Japanese.pdf"
-        },
-        {
-            "name": "用中文（表达 Chinese (Simplified)",
-            "url": "https://www.fbi.gov/wanted/cyber/minh-quoc-nguyen/nguyen2023simplifiedchinese.pdf/@@download/file/nguyen2023SimplifiedChinese.pdf"
-        },
-        {
-            "name": "用中文（表達 Chinese (Traditional)",
-            "url": "https://www.fbi.gov/wanted/cyber/minh-quoc-nguyen/nguyen2023traditionalchinese.pdf/@@download/file/nguyen2023TraditionalChinese.pdf"
-        }
-    ],
-    "uid": "f5366fcb9ba64d7880a4c6f8f680effb",
-}
-)
-db.criminals.insertOne(
-        {
     "age_min": null,
     "hair_raw": "Black",
     "modified": "2023-03-27T18:05:20+00:00",

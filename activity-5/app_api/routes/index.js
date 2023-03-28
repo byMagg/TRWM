@@ -6,5 +6,4 @@ const ctrlCriminals = require('../controllers/criminals');
 router.get('/criminals', ctrlCriminals.criminalsReadAll);
 router.get('/criminals/:criminalid', ctrlCriminals.criminalsReadOne);
 
-
 module.exports = router;

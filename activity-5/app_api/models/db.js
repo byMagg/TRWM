@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = 'mongodb://localhost/Loc8r';
+const dbURI = 'mongodb://localhost/FBI';
 mongoose.connect(dbURI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 // CONNECTION EVENTS
