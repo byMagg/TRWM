@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const dbURI = 'mongodb://localhost/Loc8r';
-mongoose.connect(dbURI, { useUnifiedTopology: true,  useNewUrlParser: true });
+mongoose.connect(dbURI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 // CONNECTION EVENTS
 mongoose.connection.on('connected', () => {
@@ -17,7 +17,7 @@ mongoose.connection.on('disconnected', () => {
 // CAPTURE APP TERMINATION / RESTART EVENTS
 // To be called when process is restarted or terminated
 const gracefulShutdown = (msg, callback) => {
-    mongoose.connection.close( () => {
+    mongoose.connection.close(() => {
         console.log('Mongoose disconnected through ' + msg);
         callback();
     });
@@ -37,4 +37,4 @@ process.on('SIGINT', () => {
 });
 
 // BRING IN YOUR SCHEMAS & MODELS
-require('./locations');
+require('./criminals');
