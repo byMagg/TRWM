@@ -15,7 +15,6 @@ const criminalsReadAll = (req, res) => {
                 sendJSONresponse(res, 404, { "message": "criminals not found" });
             } else if (err) { sendJSONresponse(res, 404, err); }
             else {
-                console.log(criminals)
                 sendJSONresponse(res, 200, criminals);
             }
         });
