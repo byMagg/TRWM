@@ -34,6 +34,8 @@ const criminalsReadOne = (req, res) => {
         });
 };
 
+
+
 module.exports = {
     criminalsReadAll,
     criminalsReadOne,
