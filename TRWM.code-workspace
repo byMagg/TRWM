@@ -1,7 +1,16 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "activity-2"
+		},
+		{
+			"path": "activity-3"
+		},
+		{
+			"path": "activity-4"
+		},
+		{
+			"path": "activity-5"
 		}
 	],
 	"settings": {}
