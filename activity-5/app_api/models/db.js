@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = 'mongodb://localhost/FBI';
+const dbURI = 'mongodb://mongodb/UKHealth';
 mongoose.connect(dbURI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 // CONNECTION EVENTS
@@ -37,4 +37,4 @@ process.on('SIGINT', () => {
 });
 
 // BRING IN YOUR SCHEMAS & MODELS
-require('./criminals');
+require('./restaurants');

@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const ctrlCriminals = require('../controllers/criminals');
+const ctrlRestaurants = require('../controllers/restaurants');
 
-// Criminals
-router.get('/criminals', ctrlCriminals.criminalsReadAll);
-router.get('/criminals/:criminalid', ctrlCriminals.criminalsReadOne);
+// Restaurants
+router.get('/restaurants', ctrlRestaurants.restaurantsReadAll);
+router.get('/restaurants/:restaurantid', ctrlRestaurants.restaurantsReadOne);
 
 module.exports = router;
