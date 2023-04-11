@@ -35,11 +35,10 @@ const restaurantsReadOne = (req, res) => {
 };
 
 const restaurantsUpdateOne = (req, res) => {
+    // if (!req.body) return sendJSONresponse(res, 404, { "message": "nothing to update" })
     Restaurant
         .findByIdAndUpdate(req.params.restaurantid,
-            {
-                BusinessName: 'ANASHE'
-            })
+            req.body)
         .exec((err, restaurant) => {
             //TODO add body verification
             if (!restaurant) {
