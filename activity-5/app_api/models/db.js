@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = 'mongodb://mongodb/UKHealth';
+const dbURI = 'mongodb://localhost/UKHealth';
 mongoose.connect(dbURI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 // CONNECTION EVENTS
