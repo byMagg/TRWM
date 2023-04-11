@@ -34,9 +34,26 @@ const restaurantsReadOne = (req, res) => {
         });
 };
 
+const restaurantsUpdateOne = (req, res) => {
+    Restaurant
+        .findByIdAndUpdate(req.params.restaurantid,
+            {
+                BusinessName: 'ANASHE'
+            })
+        .exec((err, restaurant) => {
+            //TODO add body verification
+            if (!restaurant) {
+                return sendJSONresponse(res, 404, { "message": "restaurant not found" });
+            } else if (err) {
+                return sendJSONresponse(res, 404, err);
+            }
+            sendJSONresponse(res, 200, restaurant);
+        })
+}
 
 
 module.exports = {
     restaurantsReadAll,
     restaurantsReadOne,
+    restaurantsUpdateOne
 };
